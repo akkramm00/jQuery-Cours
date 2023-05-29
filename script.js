@@ -41,6 +41,23 @@ $('#box').click((event) => {
     console.log('event');
 })
 
+//  ##################### DEUXIEME PARTIE DE L EXERCICE ######################
+
+// inserons le text suivant dans l'élément h1 :" introduction à jQuery"
+$('h1').text('Introcution à jQuery')
+
+// ajoutons à la class "introduction du html"
+$('.introduction').html('<p> Il s\'agit de <strong>l\'introduction</strong></p>');
+
+// Modifions le CSS des paragraphes disposant de la classe 'content'pour y 
+//appliquer un texte de couleur "blue"
+
+$('.content').css({
+    
+    'color' : 'blue'
+
+}
+)
 
 });
 
