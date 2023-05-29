@@ -51,13 +51,18 @@ $('.introduction').html('<p> Il s\'agit de <strong>l\'introduction</strong></p>'
 
 // Modifions le CSS des paragraphes disposant de la classe 'content'pour y 
 //appliquer un texte de couleur "blue"
+$('.content').css( 'color' , 'blue');
+$('.content').first().removeClass('content');
 
-$('.content').css({
-    
-    'color' : 'blue'
+// learn how to delete a class from th DOM
+// using remove() and first() methods
 
-}
-)
+//== la methode first() permet de séléctionner le premier élément, la méthode removeClass() 
+//permet quand a elle de supprimer une classe
+
+//===== pour supprimer la première class="content"de la section :
+
+
 
 });
 
