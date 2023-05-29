@@ -24,5 +24,23 @@ $('#main-title').css('color' , 'red') // de la meme manière on injecte du css d
 // on peut meme chainer les methodes pour in meme selecteur ...
 
 $('#main-title').text('un deuxième title').css('color' , 'green');
+
+//========== Add du CSS a la div "box" ======================
+
+$('#box').css({
+    'background' : "lightblue" ,
+    'height' : '200px' ,
+    'width' : '400px' ,
+    'padding' : '30px'
+});
+
+// ============ Add event click a la div "box" ==============
+
+$('#box').click((event) => {
+    alert('la box a été cliquée !');
+    console.log('event');
+})
+
+
 });
 
